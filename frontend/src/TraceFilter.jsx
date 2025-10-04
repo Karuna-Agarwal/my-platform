@@ -7,7 +7,7 @@ export default function TraceFilter() {
   const tracingOptions = [
     {
       id: 'coding',
-      name: 'Code Tracing',
+      name: 'Learn coding through games',
       description: 'Step through code execution and understand how programs work line by line',
       icon: '💻',
       features: ['Variable Tracking', 'Step-by-Step Execution', 'Debugging Practice', 'Code Visualization']
@@ -31,7 +31,7 @@ export default function TraceFilter() {
       {/* Header */}
       <header className="header">
         <div className="header-content">
-          <Link to="/" className="logo">CodeCraf</Link>
+          <Link to="/" className="logo">Algorythm</Link>
           <nav className="nav">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/learn" className="nav-link">Learn</Link>
@@ -98,7 +98,7 @@ export default function TraceFilter() {
           <div className="footer-section">
             <h4>Not sure which to choose?</h4>
             <p style={{color: 'var(--muted)', margin: '10px 0 0'}}>
-              <strong>Code Tracing</strong> is great for understanding specific code execution.<br/>
+              <strong>Learn Coding through games</strong> is great for understanding specific code execution.<br/>
               <strong>Algorithm Tracing</strong> is perfect for learning how algorithms work.
             </p>
           </div>

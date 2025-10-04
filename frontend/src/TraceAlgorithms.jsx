@@ -119,7 +119,7 @@ export default function TraceAlgorithms() {
       {/* Header */}
       <header className="header">
         <div className="header-content">
-          <Link to="/" className="logo">CodeCraf</Link>
+          <Link to="/" className="logo">Algorythm</Link>
           <nav className="nav">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/learn" className="nav-link">Learn</Link>

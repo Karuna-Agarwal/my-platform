@@ -1,3 +1,4 @@
+// App.js
 import './app.css';
 import { Link } from 'react-router-dom';
 
@@ -50,10 +51,10 @@ export default function App() {
 
   return (
     <div className="wrap">
-      {/* Enhanced Header */}
+      {/* Header */}
       <header className="header">
         <div className="header-content">
-          <Link to="/" className="logo">CodeCraf</Link>
+          <Link to="/" className="logo">Algorythm</Link>
           <nav className="nav">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/learn-filter" className="nav-link">Learn</Link>
@@ -63,13 +64,13 @@ export default function App() {
         </div>
       </header>
 
-      {/* Enhanced Hero Section */}
+      {/* Hero Section */}
       <section className="hero">
         <h1>Explore Your Coding Journey</h1>
         <p>Choose your path and start learning today with our curated learning experiences</p>
       </section>
 
-      {/* Enhanced Cards Grid */}
+      {/* Cards Grid */}
       <div className="cards-grid">
         {learningPaths.map((path, index) => (
           <div key={index} className="card">
@@ -85,7 +86,14 @@ export default function App() {
         ))}
       </div>
 
-      {/* Enhanced Footer */}
+      {/* Create Test Button after cards */}
+      <div style={{ textAlign: "center", marginTop: "30px", marginBottom: "30px" }}>
+        <Link to="/create-test" className="btn primary">
+          Create Test
+        </Link>
+      </div>
+
+      {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
           {footerSections.map((section, index) => (
@@ -103,7 +111,7 @@ export default function App() {
         </div>
         
         <div className="footer-bottom">
-          <p>© 2025 CodeCraf. All rights reserved. Built with passion for developers.</p>
+          <p>© 2025 Algorythm. All rights reserved. Built with passion for developers.</p>
         </div>
       </footer>
     </div>
