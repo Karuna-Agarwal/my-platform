@@ -118,30 +118,56 @@ export default function BuildProjects() {
               technologies: ["Python", "Flask", "Hugging Face API", "React"], features: ["Prompt Input", "Image Generation", "Gallery", "Download Images"], 
               resources: [ { name: "Hugging Face", link: "https://huggingface.co/" }, { name: "Flask Docs", link: "https://flask.palletsprojects.com/" } ], icon: "🤖", 
               steps: [ "Set up Flask backend and integrate API", "Create React front end", "Handle image generation requests", "Display generated images in gallery", "Enable download and sharing" ] },
-    {
+              {
       id: 8,
-      title: "Weather Dashboard",
-      description: "Fetch real-time weather data and display it in a responsive UI",
-      level: "Intermediate",
-      category: "APIs",
-      duration: "4-5 days",
-      technologies: ["HTML", "CSS", "JavaScript", "OpenWeather API"],
-      features: ["Search by City", "Temperature, Humidity, Wind", "5-Day Forecast", "Dark Mode"],
+      title: "Memory Card Game",
+      description: "Develop a fun browser-based memory card matching game",
+      level: "Beginner",
+      category: "Games",
+      duration: "3-5 days",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      features: ["Card Flipping", "Match Checking", "Score Counter", "Restart Option"],
       resources: [
-        { name: "OpenWeather API", link: "https://openweathermap.org/api" },
-        { name: "Fetch API Guide", link: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" }
+        { name: "Game Loop Basics", link: "https://developer.mozilla.org/en-US/docs/Games/Anatomy" },
+        { name: "CSS Grid Guide", link: "https://css-tricks.com/snippets/css/complete-guide-grid/" }
       ],
-      tutorialLink: "https://www.youtube.com/watch?v=Oe421EPjeBE",
-      starterCode: `<!DOCTYPE html>\n<html>\n<head>\n<title>Weather Dashboard</title>\n<link rel=\"stylesheet\" href=\"styles.css\"/>\n</head>\n<body>\n<h1>Weather Dashboard</h1>\n<script src=\"script.js\"></script>\n</body>\n</html>`,
-      icon: "☀️",
+      tutorialLink: "",
+      starterCode: "",
+      icon: "🎮",
       steps: [
-        "Set up API key and fetch weather data",
-        "Design search input and weather display card",
-        "Display temperature, humidity, and other data",
-        "Add forecast feature",
-        "Implement dark/light mode"
+        "Set up grid layout with cards",
+        "Implement card flipping and hidden values",
+        "Add logic to check for matches",
+        "Track score and number of moves",
+        "Add restart functionality",
+        "Polish with CSS animations"
+      ]
+    },
+    {
+      id: 9,
+      title: "Task Automation Script",
+      description: "Write a script to automate repetitive daily tasks",
+      level: "Intermediate",
+      category: "Automation",
+      duration: "2-4 days",
+      technologies: ["Python", "Selenium", "BeautifulSoup"],
+      features: ["Automated Web Actions", "Data Extraction", "Scheduled Runs"],
+      resources: [
+        { name: "Selenium Docs", link: "https://www.selenium.dev/documentation/" },
+        { name: "BeautifulSoup Guide", link: "https://www.crummy.com/software/BeautifulSoup/bs4/doc/" }
+      ],
+      tutorialLink: "",
+      starterCode: "",
+      icon: "⚙️",
+      steps: [
+        "Install Selenium and BeautifulSoup",
+        "Write script for a simple web automation (like login)",
+        "Extract specific data from a webpage",
+        "Schedule script to run automatically",
+        "Handle errors and exceptions"
       ]
     }
+    
     // keep rest as is, add tutorialLink and starterCode placeholders if needed
   ];
 
@@ -318,7 +344,7 @@ export default function BuildProjects() {
       {/* Header */}
       <header className="header">
         <div className="header-content">
-          <Link to="/" className="logo">CodeCraf</Link>
+          <Link to="/" className="logo">Algorythm</Link>
           <nav className="nav">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/learn" className="nav-link">Learn</Link>

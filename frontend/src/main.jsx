@@ -5,7 +5,7 @@ import App from './App'
 import RoadmapFilter from './RoadmapFilter'
 import RoadmapResult from './RoadmapResult'
 import Learn from './Learn'
-import LearnFilter from './LearnFilter' // ADD THIS IMPORT
+import LearnFilter from './Learnfilter' // ADD THIS IMPORT
 import HTMLCourse from './HTMLCourse'
 import JSCourse from './JSCourse'
 import PythonCourse from './PythonCourse'
@@ -19,6 +19,10 @@ import TraceAlgorithms from './TraceAlgorithms';
 import ProjectsFilter from './ProjectsFilter';
 import BuildProjects from './BuildProjects';
 import RefactorCode from './RefactorCode';
+import CreateTest from './CreateTest';
+import CreateTestFinal from './CreateTestFinal'
+import TestInterface from './TestInterface'
+
 
 import './index.css'
 import './app.css'
@@ -38,6 +42,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/projects" element={<ProjectsFilter />} />
         <Route path="/projects/build-projects" element={<BuildProjects />} />
         <Route path="/refactor" element={<RefactorCode />} />
+        <Route path="/create-test" element={<CreateTest />} />
+        <Route path="/create-test-final" element={<CreateTestFinal/>}/>
+        <Route path="/test-interface" element={<TestInterface/>}/>
+
+
         
         {/* Individual Course Pages */}
         <Route path="/learn/html-css-fundamentals" element={<HTMLCourse />} />
